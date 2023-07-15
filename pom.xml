@@ -11,6 +11,8 @@
     <modules>
         <module>bean-validation</module>
         <module>constraint-error-messages</module>
+        <module>common-utils</module>
+        <module>custom-constraints</module>
     </modules>
 
     <properties>
@@ -27,6 +29,12 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-el</artifactId>
+            <version>9.0.76</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.26</version>
@@ -37,12 +45,6 @@
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-el</artifactId>
-            <version>9.0.76</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
